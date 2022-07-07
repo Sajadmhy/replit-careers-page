@@ -1,5 +1,14 @@
 /* styling the elements */
 
+.container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
 .header {
   background: #0F1425;
   display: flex;
@@ -58,7 +67,11 @@
   margin-left: 10px;
   padding: 5px 7px;
 }
-  
+
+.nav li:nth-of-type(6) {
+  text-shadow: #0067ce 0px 0px 15px;
+}
+
 .nav li:nth-of-type(7) {
   flex: 1;
 }
@@ -104,7 +117,7 @@
 
 .dropDown {
   display: flex;  
-  background: #323b5c;
+  background: #22283d;
   flex-direction: column;
   border-radius: 5px;
   font-size: 14px;
