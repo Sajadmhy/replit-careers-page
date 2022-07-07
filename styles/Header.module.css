@@ -1,0 +1,136 @@
+/* styling the elements */
+
+.header {
+  background: #0F1425;
+  display: flex;
+  padding: 13px;
+  align-items: center;
+  height: 60px;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.logo {
+  width: 95px;
+  height: 30px;
+  color: white;
+}
+
+.prompt {
+  color: #FEC600;
+}
+  
+.nav {
+  color: white;
+  flex: 1;
+}
+  
+.nav ul {
+  display: flex;
+  margin: 5px 5px;
+  padding: 0;
+  gap: 27px;
+  font-size: 14px;
+}
+  
+.nav li {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 0;
+  border: solid transparent 0.1px;
+  transition: 0.1s;
+}
+  
+.arrowDown {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  margin: 3px 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav li:first-of-type {
+  margin-left: 10px;
+  padding: 5px 7px;
+}
+  
+.nav li:nth-of-type(7) {
+  flex: 1;
+}
+
+.nav li:nth-of-type(8) {
+  padding: 5px 7px;
+}
+
+.nav li:nth-of-type(9) {
+  padding: 5px 7px;
+  background : #0153A7 ;
+  border-radius: 8px;
+}
+
+
+/* adding the hover effect */
+
+.nav li:nth-of-type(1):hover {
+  border: solid rgb(139, 139, 139);  
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.nav li:nth-of-type(8):hover {
+  border: solid rgb(139, 139, 139);  
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.nav li:nth-of-type(9):hover {
+  border: solid rgb(99, 176, 206);  
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.nav li:nth-of-type(2):hover, .nav li:nth-of-type(3):hover,
+.nav li:nth-of-type(4):hover, .nav li:nth-of-type(5):hover,
+.nav li:nth-of-type(6):hover {
+  color: rgb(79, 120, 255);
+} 
+
+/* styling the dropdown menu */
+
+.dropDown {
+  display: flex;  
+  background: #323b5c;
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+  border: solid rgb(139, 139, 139);  
+  border-radius: 8px;
+  border-width: 1px;
+  margin: 10px 0 0 0;
+}
+
+.dropDown li {
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropDown li:hover {
+  background: #0153A7;
+  cursor: pointer;
+}
+
+.hiddenDropBox {
+  position: absolute;  
+  color: white;
+  flex-direction: column;
+  background: transparent;
+  top: 45px;
+  left: 122px;
+}
