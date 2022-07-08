@@ -1,10 +1,11 @@
 import styles from '../styles/Tabs.module.css';
-
+import Tags from './Tags';
 
 export default function Tabs() {
     return (
         <div className={styles.tabs}>
                 <button className={styles.runButton}><span>Run</span> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg> </button>
+                <Tags/>
                 <div className={styles.files}>
                     <div className={styles.head}>
                         script.js

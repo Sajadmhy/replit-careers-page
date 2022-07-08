@@ -1,0 +1,120 @@
+.tags {
+    color: white;
+    position: relative;
+}
+
+.tagOne::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border-radius: 4px;
+    background-color: #38c526;
+    z-index: -1;
+    transform: translateX(-38.5px)translateY(5px)scale(0.3)rotate(90deg);
+}
+
+.tagOne {
+    position: absolute;
+    top: 80px;
+    left:40%;
+    background: #38c526;
+    border-radius: 4px;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 20px 20px 40px 1px #00000093;
+    animation-name: alan;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes alan {
+    0% {
+        transform: translateX(0px)translateY(0px);
+    }
+    100% {
+        transform: translateX(5px)translateY(10px);
+    }
+}
+
+
+.tagTwo {
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    background: #fc0f0f;
+    border-radius: 4px;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 20px 20px 40px 1px #00000093;
+    animation-name: grace;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.tagTwo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border-radius: 4px;
+    background-color: #fc0f0f;
+    z-index: -1;
+    transform: translateX(-50px)translateY(5px)scale(0.3)rotate(90deg);
+}
+
+@keyframes grace {
+    0% {
+        transform: translateX(0px)translateY(0px);
+    }
+    100% {
+        transform: translateX(10px)translateY(10px);
+    }
+}
+
+.tagMe {
+    position: absolute;
+    top: 370px;
+    left: 40%;
+    background: #079ad4;
+    border-radius: 4px;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 20px 20px 40px 1px #00000093;
+    animation-name: sajad;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.tagMe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border-radius: 4px;
+    background-color: #079ad4;
+    z-index: -1;
+    transform: translateX(-24px)translateY(5px)scale(0.3)rotate(90deg);
+}
+
+@keyframes sajad {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
