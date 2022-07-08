@@ -5,11 +5,11 @@ export default function HeaderComp() {
     const [dropDown, setDropDown] = useState(false);
     const [hamList, setHamList] = useState(false);
     const refHamList = useRef();
-
+    const refHamMenu = useRef();
   // closes hamList modal when clicked outside the modal
   useEffect(() => {
     const checkIfClickedOutside = e => {
-      if (hamList && refHamList.current && !refHamList.current.contains(e.target)) {
+      if (hamList && refHamList.current  && !refHamList.current.contains(e.target) && !refHamMenu.current.contains(e.target)) {
         setHamList(false)
       }
     }
@@ -39,7 +39,7 @@ export default function HeaderComp() {
             <li>Log in</li>
             <li>Sign up</li>
           </ul>
-        <div className={styles.hamMenu} onClick={() => setHamList(!hamList)}>☰</div>
+        <div className={styles.hamMenu} ref={refHamMenu} onClick={() => setHamList(!hamList)}>☰</div>
         </nav>
         { hamList && <ul ref={refHamList}  className={styles.hamList}>
           <li>Sign up</li>
