@@ -3,6 +3,24 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function HeaderComp() {
     const [dropDown, setDropDown] = useState(false);
+    const [hamList, setHamList] = useState(false);
+    const refHamList = useRef();
+
+  // closes hamList modal when clicked outside the modal
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      if (hamList && refHamList.current && !refHamList.current.contains(e.target)) {
+        setHamList(false)
+      }
+    }
+  
+    document.addEventListener("mousedown", checkIfClickedOutside)
+  
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+  }, [hamList])  
+
 
   return (
     <div className={styles.container}>
@@ -21,7 +39,22 @@ export default function HeaderComp() {
             <li>Log in</li>
             <li>Sign up</li>
           </ul>
+        <div className={styles.hamMenu} onClick={() => setHamList(!hamList)}>☰</div>
         </nav>
+        { hamList && <ul ref={refHamList}  className={styles.hamList}>
+          <li>Sign up</li>
+          <li>Log in</li>
+          <li>Features</li>
+          <li>IDE</li>
+          <li>Multiplayer</li>
+          <li>Community</li>
+          <li>Hosting</li>
+          <li>Blog</li>
+          <li>Pricing</li>
+          <li>Teams Pro</li>
+          <li>Teams for Education</li>
+          <li>Careers</li>
+        </ul> }
         {dropDown && <div className={styles.hiddenDropBox} 
       onMouseLeave={() => setDropDown(false)} onMouseEnter={() => setDropDown(true)}>
         <div className={styles.dropDown}>

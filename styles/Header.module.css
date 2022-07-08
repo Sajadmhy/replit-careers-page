@@ -147,3 +147,73 @@
   top: 45px;
   left: 122px;
 }
+
+.hamMenu {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 31px;
+  color: rgb(196, 196, 196);
+  user-select: none;
+}
+
+.hamMenu:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.hamList {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #22283d;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;  
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+  list-style: none;
+  gap: 16px;
+  padding: 20px 15px;
+  font-size: 14px;
+}
+
+.hamList li:first-of-type , .hamList li:nth-of-type(2) {
+  background : #0153A7 ;
+  width: 65px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.hamList li:nth-of-type(3) {
+  color:rgb(196, 196, 196) ;
+}
+
+.hamList li:nth-of-type(4) , .hamList li:nth-of-type(5),
+.hamList li:nth-of-type(6) , .hamList li:nth-of-type(7) {
+  margin-left: 10px;
+}
+
+.hamList li:nth-of-type(12) {
+  text-shadow: #0781fc 0px 0px 15px;
+}
+
+
+@media screen and (min-width: 780px) {
+  .hamMenu {
+    display: none;
+  }
+  .hamList {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .nav ul {
+    display: none;
+  }
+}
+  

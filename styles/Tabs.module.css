@@ -136,3 +136,13 @@
     z-index: -1;
     font-size: 15px;
 }
+
+
+@media screen and (max-width: 780px) {
+    .runButton {
+        border-radius: 50%;
+    }
+    .runButton span {
+        display: none;
+    }
+}

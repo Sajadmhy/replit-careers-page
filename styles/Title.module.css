@@ -54,3 +54,9 @@
 }
 
 
+@media screen and (max-width: 780px) {
+    .title {
+        margin: 0 0 0 40px ;
+        transform: scale(0.9);
+    }
+}
