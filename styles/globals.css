@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+body::-webkit-scrollbar {
+  width:15px;
+  background-color: #1D2233;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#283142;
+}
