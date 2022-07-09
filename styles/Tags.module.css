@@ -1,6 +1,7 @@
 .tags {
     color: white;
     position: relative;
+    z-index: 100;
 }
 
 .tagOne::before {

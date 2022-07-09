@@ -138,6 +138,16 @@
 }
 
 
+.editor::-webkit-scrollbar {
+    width:15px;
+    background-color: #1D2233;
+  }
+  
+.editor::-webkit-scrollbar-thumb {
+background-color:#283142;
+}
+  
+
 @media screen and (max-width: 780px) {
     .runButton {
         border-radius: 50%;
@@ -145,14 +155,29 @@
     .runButton span {
         display: none;
     }
-}
+    .editor {
+        width: 50%;
+        overflow: auto;
+        height: 400px;
+        z-index: 1;
+    }
 
+    .files {
+        width: 50%;
+        overflow: auto;
+    }
+    .commandLine {
+        width: 50%;
+        overflow: auto;
+}
+}
 
 @media screen and (max-width: 400px) {
     .editor {
         width: 50%;
         overflow: auto;
         height: 400px;
+        z-index: 1;
     }
 
     .files {
