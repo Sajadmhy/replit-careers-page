@@ -7,6 +7,10 @@
     transform: translate3d(0,0,0);
 }
 
+.tagsDiv {
+    z-index: 100;
+}
+
 .runButton {
     position: absolute;
     left: 50%;

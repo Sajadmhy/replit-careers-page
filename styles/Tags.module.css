@@ -2,6 +2,8 @@
     color: white;
     position: relative;
     z-index: 100;
+    -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .tagOne::before {
@@ -108,7 +110,7 @@
     border-radius: 4px;
     background-color: #079ad4;
     z-index: -1;
-    transform: translateX(-24px)translateY(5px)scale(0.3)rotate(90deg);
+    transform: translateX(-24px)translateY(11px)scale(0.3)rotate(90deg);
 }
 
 @keyframes sajad {
