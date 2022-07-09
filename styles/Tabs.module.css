@@ -3,6 +3,8 @@
 .tabs {
     -webkit-perspective: 1e3px;
     perspective: 1e3px;
+    -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .runButton {
@@ -48,6 +50,7 @@
     border-radius: 8px;
     color: white;
     height: 380px;
+    z-index: -1;
 }
 
 .head {
@@ -80,8 +83,8 @@
     border: solid #343f5c 1px;
     top: 50px;
     left: 50%;
-    -webkit-transform: translateX(-50%)translateZ(90px)rotateX(30deg);
-    transform: translateX(-50%)translateZ(90px)rotateX(30deg);
+    -webkit-transform: translateX(-50%)translateZ(91px)rotateX(30deg);
+    transform: translateX(-50%)translateZ(91px)rotateX(30deg);
     border-radius: 8px;
     z-index: 1;
 }
@@ -122,7 +125,7 @@
 
 .commandLine {
     position: absolute;
-    background: #1C2232;
+    background: #0F1425;
     max-width: 500px;
     width: 300px;
     padding: 10px;
@@ -178,7 +181,6 @@ background-color:#283142;
         width: 50%;
         overflow: auto;
         height: 400px;
-        z-index: 1;
     }
 
     .files {
