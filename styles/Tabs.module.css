@@ -83,6 +83,7 @@
     -webkit-transform: translateX(-50%)translateZ(90px)rotateX(30deg);
     transform: translateX(-50%)translateZ(90px)rotateX(30deg);
     border-radius: 8px;
+    z-index: 1;
 }
 
 .tabs code {

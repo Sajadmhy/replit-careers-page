@@ -59,7 +59,6 @@
         margin: 0 0 0 0;
         transform: scale(0.9);
         width: 100%;
-        /* padding: 0 0 0 40px; */
     }
     
     .body {
@@ -78,3 +77,4 @@
         margin: 0 20px 20px 0;
     }
 }
+
