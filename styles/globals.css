@@ -15,6 +15,9 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #0F1425;
+}
 
 body::-webkit-scrollbar {
   width:15px;
