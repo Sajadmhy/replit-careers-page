@@ -7,11 +7,11 @@ export default function TitleComp() {
             <div className={styles.bg}>
             </div>
             <div className={styles.title}>
-            <h1>Careers at Replit</h1>
+            <h1>Replit with Sajad</h1>
             <div className={styles.body}>
-            We&apos;re on a mission to bring the next billion software creators online. Creating the future of computing is a team effort though.
+            Sajad&apos;s on a mission to help Replit bring the next billion software creators online. Building the future of is a team effort.
             </div>
-            <button>See open positions</button>
+            <a href="/#cool"><button >See something cool</button></a>
             </div>
             <Tabs/>
         </div>

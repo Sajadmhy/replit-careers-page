@@ -78,6 +78,11 @@
     font-size: 13px;
 }
 
+.body li:hover {
+    cursor: pointer;
+    background: #343f5c;
+}
+
 .editor {
     position: absolute;
     padding: 10px;
@@ -91,6 +96,7 @@
     transform: translateX(-50%)translateZ(91px)rotateX(30deg);
     border-radius: 8px;
     z-index: 1;
+    height: 400px;
 }
 
 .tabs code {
